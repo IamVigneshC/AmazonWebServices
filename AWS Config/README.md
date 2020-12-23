@@ -34,11 +34,17 @@ Your company’s Chief Information Security Officer (CISO) has called on you to 
 
 1. Click Confirm.
 
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Config/Resources/1.png)
+
 1. Once complete you'll be directed back to the AWS Config dashboard. If you notice a blue alert message at the top about a redesigned AWS Config console, click the Try it out now link. If you don't notice this message, you should already be in the newest version of the console.
 
 With your AWS Config setup complete, the service will begin finding resources and determining their compliance status based on the rules you selected. This process should take a few minutes. After a few minutes, refresh the page. 
 
 The dashboard displays compliance status by rule and by resource. Under Compliance Status, you should see two noncompliant rules and four noncompliant resources, as in the image below.
+
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Config/Resources/2.png)
 
 
 
@@ -57,9 +63,11 @@ Using the rules you specified, AWS Config has revealed the resources that are no
 
 1. Click the Actions dropdown menu and select Edit inbound rules.
 
-1. Review the inbound rules, then delete the rule that allows SSH traffic from all addresses (Note: It's the only rule with a description filled out). 
+1. Review the inbound rules, then delete the rule that allows SSH traffic from all addresses
 
 1. Click Save rules.
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Config/Resources/3.png)
 
 With the wide-open SSH rule removed, the noncompliant security group has been remediated; however, it will take several minutes for AWS Config to register the new compliance status. 
 
@@ -90,4 +98,7 @@ Remediating the noncompliant security group is probably the most important step 
 1. Select Compliant from the Compliance dropdown. 
 
 1. Confirm that all resources listed are compliant. This verifies that your remediation steps have been successful.
+
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Config/Resources/4.png)
 
