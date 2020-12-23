@@ -177,9 +177,7 @@ Allow Lambda functions to call AWS Services on your behalf
 1. Copy and paste the code below into the online editor for my-function, overwriting any code that already exists. Replace both hard-coded email addresses with your own email address.
 
         import json 
-
         import boto3 
-
         def lambda_handler(event, context): 
 
        `for i in event["Records"]:`
