@@ -192,7 +192,7 @@ Allow Lambda functions to call AWS Services on your behalf
             
              `object =i["s3"]["object"]["key"]`
              
-      ` client = boto3.client("ses")`
+       ` client = boto3.client("ses")`
       
        `subject = str(action) + 'Event from ' + bucket_name`
        
