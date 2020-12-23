@@ -12,9 +12,8 @@ Your company is using Amazon S3 for file storage (using an S3 bucket) where all 
 
 1. Select Author from scratch (should be selected by default), and enter the following values:
 
-  - Function name: my-function
-
-  - Runtime: Python 3.8
+   - Function name: my-function
+   - Runtime: Python 3.8
 
 1. Under Permissions, expand Choose or create an execution role, and select Create a new role with basic Lambda permissions. (This should be chosen by default.)
 
@@ -34,7 +33,6 @@ Allow Lambda functions to call AWS Services on your behalf.
 1. Under Attach permissions policies, check the following two policies:
 
    - AmazonDynamoDBFullAccess
-
    - AmazonS3ReadOnlyAccess
 
 1. Click Next: Tags.
