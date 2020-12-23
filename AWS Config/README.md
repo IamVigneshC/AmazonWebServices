@@ -37,7 +37,7 @@ Your company’s Chief Information Security Officer (CISO) has called on you to 
 
 ![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Config/Resources/1.png)
 
-1. Once complete you'll be directed back to the AWS Config dashboard. If you notice a blue alert message at the top about a redesigned AWS Config console, click the Try it out now link. If you don't notice this message, you should already be in the newest version of the console.
+Once complete you'll be directed back to the AWS Config dashboard. If you notice a blue alert message at the top about a redesigned AWS Config console, click the Try it out now link. If you don't notice this message, you should already be in the newest version of the console.
 
 With your AWS Config setup complete, the service will begin finding resources and determining their compliance status based on the rules you selected. This process should take a few minutes. After a few minutes, refresh the page. 
 
