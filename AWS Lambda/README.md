@@ -6,6 +6,9 @@
 Your company is using Amazon S3 for file storage (using an S3 bucket) where all users can put and delete their files. When a user uploads or deletes a file, your company requires an entry to be immediately created in the database table. This entry contains the file metadata, like the file’s name, creation time, size of the file, Bucket, Event, and so on.
 
 
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Lambda/Resources/Lambda.JPG)
+
+
 1. Open the Services menu in the top navigation bar, and from the Compute section, select Lambda. 
 
 1. In the navigation pane on the left, click on Functions. (This is probably chosen by default.)
@@ -43,9 +46,6 @@ Allow Lambda functions to call AWS Services on your behalf.
 
 1. For the Role name, enter lambda-s3-dynamodb-role. 
 
-
-
-
 1. Click Create role.
 
 1. Open the Services menu in the top navigation bar, and from the Compute section, select Lambda. Click my-function, then click on the Permissions tab.
@@ -62,6 +62,8 @@ To view the resources and actions that your function has permission to access, c
 
 
 ### Add an S3 Trigger to the Lambda Function
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Lambda/Resources/S3.JPG)
 
 
 1. (This is likely not needed.) Open the Services menu in the top navigation bar, and from the Compute section, select Lambda. Click my-function.
@@ -100,6 +102,8 @@ def lambda_handler(event, context):
 
 
 ### Trigger Lambda Function Code
+
+![Product](https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20Lambda/Resources/Trigger.JPG)
 
 1. Open the Services menu in the top navigation bar, and from the Storage section, select S3.
 
