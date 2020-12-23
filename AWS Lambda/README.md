@@ -86,20 +86,35 @@ To view the resources and actions that your function has permission to access, c
 
 1. Copy and paste the code below into the online editor, overwriting any code that already exists and Save:
 
-`import boto3
-from uuid import uuid4
-def lambda_handler(event, context):
-        s3 = boto3.client("s3")
-        dynamodb = boto3.resource('dynamodb')
-        for record in event['Records']:
-                bucket_name = record['s3']['bucket']['name']
-                object_key = record['s3']['object']['key']
-                size = record['s3']['object'].get('size', -1)
-                event_name = record ['eventName']
-                event_time = record['eventTime']
-                dynamoTable = dynamodb.Table('lambda-s3-table')
-                dynamoTable.put_item(
-                          Item={'RequestId': str(uuid4()), 'Bucket': bucket_name, 'Object': object_key,'Size': size, 'Event': event_name, 'EventTime': event_time})`
+`import boto3`
+
+`from uuid import uuid4`
+
+`def lambda_handler(event, context):`
+
+        `s3 = boto3.client("s3")`
+        
+        `dynamodb = boto3.resource('dynamodb')`
+        
+        `for record in event['Records']:`
+        
+                `bucket_name = record['s3']['bucket']['name']`
+                
+                `object_key = record['s3']['object']['key']`
+                
+               ` size = record['s3']['object'].get('size', -1)`
+               
+                `event_name = record ['eventName']`
+                
+                `event_time = record['eventTime']`
+                
+                `dynamoTable = dynamodb.Table('lambda-s3-table')`
+                
+                `dynamoTable.put_item(`
+                
+                          `Item={'RequestId': str(uuid4()), 'Bucket': bucket_name, 'Object': object_key,'Size': size, 'Event': event_name, 'EventTime':`
+                          
+                          `event_time})`
                           
 
 
@@ -161,25 +176,42 @@ Allow Lambda functions to call AWS Services on your behalf
 
 1. Copy and paste the code below into the online editor for my-function, overwriting any code that already exists. Replace both hard-coded email addresses with your own email address.
 
-`import json
-import boto3
-def lambda_handler(event, context):
-       for i in event["Records"]:
-             action = i["eventName"]
-             ip = i["requestParameters"]["sourceIPAddress"]
-             bucket_name = i["s3"]["bucket"]["name"]
-             object =i["s3"]["object"]["key"]
-       client = boto3.client("ses")
-       subject = str(action) + 'Event from ' + bucket_name
-       body = """
-                 <br>
-                 This is a notification mail to inform you regarding {} event.
-                 The object {} is deleted.
-                 Source IP: {}
-         """.format(action, object, ip)
-       message = {"Subject": {"Data": subject}, "Body": {"Html": {"Data": body}}}
-       response = client.send_email(Source = "abc@example.com", Destination = {"ToAddresses": ["abc@@example.com"]}, Message = message) `
+`import json`
 
+`import boto3`
+
+`def lambda_handler(event, context):`
+
+       `for i in event["Records"]:`
+       
+             `action = i["eventName"]`
+             
+             `ip = i["requestParameters"]["sourceIPAddress"]`
+             
+            ` bucket_name = i["s3"]["bucket"]["name"]`
+            
+             `object =i["s3"]["object"]["key"]`
+             
+      ` client = boto3.client("ses")`
+      
+       `subject = str(action) + 'Event from ' + bucket_name`
+       
+       `body = """ `
+       
+                 ` <br> `
+                 
+                ` This is a notification mail to inform you regarding {} event. `
+                
+                 ` The object {} is deleted. `
+                 
+                ` Source IP: {} `
+                
+        `  """.format(action, object, ip) `
+        
+      ` message = {"Subject": {"Data": subject}, "Body": {"Html": {"Data": body}}} `
+      
+     ` response = client.send_email(Source = "abc@example.com", Destination = {"ToAddresses": ["abc@@example.com"]}, Message = message) `
+       
 1. Open the Services menu in the top navigation bar, and from the Customer Engagement section, select Simple Email Service.                 
 
 1. In the navigation pane on the left, click Email Addresses.
