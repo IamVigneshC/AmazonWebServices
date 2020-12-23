@@ -85,6 +85,7 @@ To view the resources and actions that your function has permission to access, c
 1. Click on my-function, and scroll down to the Function code section.
 
 1. Copy and paste the code below into the online editor, overwriting any code that already exists and Save:
+
 import boto3
 from uuid import uuid4
 def lambda_handler(event, context):
@@ -99,6 +100,7 @@ def lambda_handler(event, context):
                 dynamoTable = dynamodb.Table('lambda-s3-table')
                 dynamoTable.put_item(
                           Item={'RequestId': str(uuid4()), 'Bucket': bucket_name, 'Object': object_key,'Size': size, 'Event': event_name, 'EventTime': event_time})
+                          
 
 
 ### Trigger Lambda Function Code
@@ -158,6 +160,7 @@ Allow Lambda functions to call AWS Services on your behalf
 1. Click Save. (If you see Unsaved changes, refresh your browser.)
 
 1. Copy and paste the code below into the online editor for my-function, overwriting any code that already exists. Replace both hard-coded email addresses with your own email address.
+
 import json
 import boto3
 def lambda_handler(event, context):
@@ -176,6 +179,7 @@ def lambda_handler(event, context):
          """.format(action, object, ip)
        message = {"Subject": {"Data": subject}, "Body": {"Html": {"Data": body}}}
        response = client.send_email(Source = "abc@example.com", Destination = {"ToAddresses": ["abc@@example.com"]}, Message = message) 
+       
 
 1. Open the Services menu in the top navigation bar, and from the Customer Engagement section, select Simple Email Service.                 
 
