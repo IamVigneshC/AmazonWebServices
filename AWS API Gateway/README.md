@@ -31,6 +31,8 @@ Now that you’ve imported the API, you should test it to ensure its HTTP integr
 
 1. In the Resources list, click the /pets resource's GET method.
 
+![API] (https://github.com/IamVigneshC/AmazonWebServices/blob/main/AWS%20API%20Gateway/API.png)
+
 1. In the /pets - GET - Method Execution pane, click TEST. Next, click the Test button at the bottom of the page to invoke the method.
    Note: Scroll down the page and observe the following results:
 
