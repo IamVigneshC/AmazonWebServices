@@ -6,8 +6,6 @@ Refer my blog: https://iamvigneshc-mydigitalworld.blogspot.com/2020/12/machine-l
 
 You are a data science consultant for a company called Globomantics, analyzing live temperature feeds. Your primary responsibility is to gather real time data from temperature sensors, and ingest this into a Kinesis Data Stream so that logs can be further analyzed. You will be configuring the Kinesis Data Stream, starting out initially with one shard.
 
-1. Login to the AWS Console using the user name, Password, and Open AWS console button provided by this lab.
-
 1. Under Find Services, type in and then click Kinesis.
 
 1. Ensure Kinesis Data Streams is selected, and then click the Create data stream button.
