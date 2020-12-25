@@ -33,13 +33,13 @@ Note: A new browser tab will open to a Linux command prompt.
 
 1. At the command prompt, enter the following two command, replacing <AWS Access Key ID> and <AWS Secret Access Key> with the CLI CREDENTIALS values provided by this lab.
 
-   export AWS_ACCESS_KEY_ID='<AWS Access Key ID>'
+      export AWS_ACCESS_KEY_ID='<AWS Access Key ID>'
 
-   export AWS_SECRET_ACCESS_KEY='<AWS Secret Access Key>'
+      export AWS_SECRET_ACCESS_KEY='<AWS Secret Access Key>'
 
 Note: For example, the first command would look something like
 
-   export AWS_ACCESS_KEY_ID='AKIASY3GMJRF5PXADOMT'
+      export AWS_ACCESS_KEY_ID='AKIASY3GMJRF5PXADOMT'
 
 - Enter cat > sensorstream.py, and paste in this sensorstream.py source code, press enter, then press Ctrl+D.
 Note: This command creates a script you will next execute, and note there are other ways to do this, such as using vi.
