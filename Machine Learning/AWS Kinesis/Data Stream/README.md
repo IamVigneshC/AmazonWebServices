@@ -28,9 +28,9 @@ Schedule a Python script to send live temperature feeds using the Kinesis API to
 1. In the upper-left, click Services, enter EC2 into the search, and click EC2.
 
 1. In the left panel, under Instances click Instances.
-Note: You will see an instance named PluralSightAnalyticsEngine in a Running state, which was created for you when you started this lab.
+Note: You will see an instance named nalyticsEngine in a Running state, which was created for you when you started this lab.
 
-1. Select the instance PluralSightAnalyticsEngine, click Connect, ensure the EC2 Instance Connect tab is selected, then click Connect.
+1. Select the instance AnalyticsEngine, click Connect, ensure the EC2 Instance Connect tab is selected, then click Connect.
 Note: A new browser tab will open to a Linux command prompt.
 
 1. At the command prompt, enter the following two command, replacing <AWS Access Key ID> and <AWS Secret Access Key> with the CLI CREDENTIALS values provided by this lab.
@@ -43,7 +43,7 @@ Note: For example, the first command would look something like
 
       export AWS_ACCESS_KEY_ID='AKIASY3GMJRF5PXADOMT'
 
-- Enter cat > sensorstream.py, and paste in this sensorstream.py source code, press enter, then press Ctrl+D.
+- Enter cat > sensorstream.py, and paste in sensorstream.py source code, press enter, then press Ctrl+D.
 Note: This command creates a script you will next execute, and note there are other ways to do this, such as using vi.
 
 - Run the command python sensorstream.py
