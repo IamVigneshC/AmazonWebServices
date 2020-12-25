@@ -26,11 +26,9 @@ Schedule a Python script to send live temperature feeds using the Kinesis API to
 1. In the upper-left, click Services, enter EC2 into the search, and click EC2.
 
 1. In the left panel, under Instances click Instances.
-
 Note: You will see an instance named PluralSightAnalyticsEngine in a Running state, which was created for you when you started this lab.
 
 1. Select the instance PluralSightAnalyticsEngine, click Connect, ensure the EC2 Instance Connect tab is selected, then click Connect.
-
 Note: A new browser tab will open to a Linux command prompt.
 
 1. At the command prompt, enter the following two command, replacing <AWS Access Key ID> and <AWS Secret Access Key> with the CLI CREDENTIALS values provided by this lab.
@@ -44,7 +42,6 @@ Note: For example, the first command would look something like
    export AWS_ACCESS_KEY_ID='AKIASY3GMJRF5PXADOMT'
 
 1. Enter cat > sensorstream.py, and paste in this sensorstream.py source code, press enter, then press Ctrl+D.
-
 Note: This command creates a script you will next execute, and note there are other ways to do this, such as using vi.
 
 1. Run the command python sensorstream.py
@@ -65,19 +62,16 @@ You generated live temperature feeds and connected them to your Kinesis Data Str
 1. In the left-hand menu click Data streams, then click the RawStreamData link.
 
 1. At the RawStreamData page, if needed, click the Monitoring tab.
-
 Note: There are various Stream metrics which you can scroll down and see, such as Incoming data - sum (Bytes), Incoming data - sum (Count), Put record - sum (Bytes), Put record latency - average (Milliseconds), and Put record success - average (Percent).
 
 1. Hover over the Incoming data - sum (Bytes) panel, in its upper-right click the three vertical dots, then click on View in metrics.
 
 1. In the new browser tab that opens to the Metric page, select a Number graph.
-
 Note: Wait if needed until IncomingRecords is above 1k, which in this scenario will indicate you need more resources to handle the streaming data. The following tasks will show you how to do this by increasing the number of shards.
 
 1. Go back to the browser tab open to the RawStreamData page, and click the Configuration tab.
 
 1. Click on Edit, increase the Number of open shards to 2, then click Save changes.
-
 Note: This will handle a greater amount of streaming data.
 
 1. After about a minute, you will see a panel saying Stream capacity was successfully updated for this data stream.
