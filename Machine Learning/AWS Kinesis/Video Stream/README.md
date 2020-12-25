@@ -19,7 +19,7 @@ You will be at the Video streams page for VP52M8OQZ10HOQRB, and in the Video str
 
 1. In the upper-left click Services, then type in and click on EC2.
 
-1. Click on Instances (running) and select the instance PluralSightAnalyticsEngine.
+1. Click on Instances (running) and select the instance AnalyticsEngine.
 
 1. Click on Connect, and at the EC2 Instance Connect tab click Connect.
 Note: A new browser tab (or window) will open to a Linux command prompt. The EC2 was created for you when you started this lab, and the OS is Ubuntu.
