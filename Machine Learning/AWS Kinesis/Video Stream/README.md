@@ -32,13 +32,13 @@ Note: This clones the Amazon Kinesis Video Streams Producer SDK at the path /hom
 
 Enter the following commands:
 
-sudo apt update -y 
+       sudo apt update -y 
 
-sudo apt install maven -y
+       sudo apt install maven -y
 
-sudo apt install default-jdk -y
+       sudo apt install default-jdk -y
 
-sudo apt install git-all -y
+       sudo apt install git-all -y
 
 Note: Enter the commands in the given order. They install the required applications to build and run the producer.
 
