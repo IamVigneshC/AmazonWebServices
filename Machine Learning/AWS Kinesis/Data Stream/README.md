@@ -41,10 +41,10 @@ Note: For example, the first command would look something like
 
    export AWS_ACCESS_KEY_ID='AKIASY3GMJRF5PXADOMT'
 
-1. Enter cat > sensorstream.py, and paste in this sensorstream.py source code, press enter, then press Ctrl+D.
+- Enter cat > sensorstream.py, and paste in this sensorstream.py source code, press enter, then press Ctrl+D.
 Note: This command creates a script you will next execute, and note there are other ways to do this, such as using vi.
 
-1. Run the command python sensorstream.py
+- Run the command python sensorstream.py
 
 Note: This ingests live temperature feeds to your Kinesis Data Stream using the python kinesis connector API. If you get an error that ends with something similar to boto.exception.NoAuthHandlerFound: No handler was ready to authenticate. 1 handlers were checked. ['HmacAuthV4Handler'] Check your credentials, then there was an issue with task 4. Double-check things, and re-do that task.
 
