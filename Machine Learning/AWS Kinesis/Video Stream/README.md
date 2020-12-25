@@ -43,7 +43,7 @@ Note: Enter the commands in the given order. They install the required applicati
 
 - To compile and assemble the producer, enter the command mvn clean compile assembly:single
 
-- Replace <Access Key ID> and <Secret Access Key> with the values under this lab's CLI CREDENTIALS section, then run the following command:
+- Run the following command with your access key:
 
             java -classpath target/amazon-kinesis-video-streams-producer-sdk-java-1.11.0-jar-with-dependencies.jar -Daws.accessKeyId=<Access Key ID> -Daws.secretKey=<Secret Access Key> -Dkvs-stream=VP52M8OQZ10HOQRB -Djava.library.path=/home/ubuntu/lab_aws_implement-data-ingestion-solution-using-amazon-kinesis-video-streams/src/main/resources/lib/ubuntu/ com.amazonaws.kinesisvideo.demoapp.DemoAppMain
 
