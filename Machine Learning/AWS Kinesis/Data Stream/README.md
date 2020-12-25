@@ -1,3 +1,5 @@
+Refer my blog: https://iamvigneshc-mydigitalworld.blogspot.com/2020/12/machine-learning-on-aws_24.html
+
 ## Implement a Data Ingestion Solution Using Amazon Kinesis Data Streams
 
 ### Create a Kinesis Data Stream
