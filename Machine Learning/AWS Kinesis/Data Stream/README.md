@@ -52,6 +52,7 @@ Note: This ingests live temperature feeds to your Kinesis Data Stream using the 
 
 This will start generating temperature feeds, and you will observe continuous sensor data including "iotValue".
 
+![M](https://github.com/IamVigneshC/AmazonWebServices/blob/main/Machine%20Learning/AWS%20Kinesis/Data%20Stream/datastream.png)
 
 ### Monitor Incoming Data to the Kinesis Data Stream
 
@@ -78,3 +79,4 @@ Note: This will handle a greater amount of streaming data.
 
 1. After about a minute, you will see a panel saying Stream capacity was successfully updated for this data stream.
 
+![M](https://github.com/IamVigneshC/AmazonWebServices/blob/main/Machine%20Learning/AWS%20Kinesis/Data%20Stream/Monitor.png)
