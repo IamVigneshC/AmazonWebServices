@@ -4,7 +4,6 @@
 
 Globomantics is an analytics firm which handles computer vision projects for object detection, image classification, and image segmentation. Your role as a Data Architect is to stream real time video feeds from a source to AWS for further analytics. You'll create a Kinesis Video Stream where live video feeds will later be ingested
 
-1. Log in to the AWS Console using the user name, Password, and Open AWS console button provided by this lab.
 
 1. Under Find Services, type in and then click Kinesis Video Streams.
 
