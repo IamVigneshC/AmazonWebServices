@@ -49,3 +49,14 @@ Note: Enter the commands in the given order. They install the required applicati
             java -classpath target/amazon-kinesis-video-streams-producer-sdk-java-1.11.0-jar-with-dependencies.jar -Daws.accessKeyId=<Access Key ID> -Daws.secretKey=<Secret Access Key> -Dkvs-stream=VP52M8OQZ10HOQRB -Djava.library.path=/home/ubuntu/lab_aws_implement-data-ingestion-solution-using-amazon-kinesis-video-streams/src/main/resources/lib/ubuntu/ com.amazonaws.kinesisvideo.demoapp.DemoAppMain
 
 DEBUG lines will be output, indicating the creation of a continuous flow of video frames to the video stream you made in the last challenge.
+
+
+### Check the Media Playback for the Kinesis Video Stream Created
+
+1. Back in the AWS Console browser tab, in the upper-left click Services, then type in and click on Kinesis Video Streams.
+
+1. In the left-hand menu click Video streams, then click on the VP52M8OQZ10HOQRB link.
+
+1. Expand the Media playback section.
+
+You'll observe real time video feeds from the producer library, which you will see as a video of a building with passing traffic.
